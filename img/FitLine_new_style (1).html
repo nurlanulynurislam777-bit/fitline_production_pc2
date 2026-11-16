@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FitLine — продукты и приготовление</title>
+<style>
+:root{--ink:#171717;--paper:#f5f1e8;--accent:#d85b32;--gold:#c6a46a;--muted:#77736c}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif}
+header{padding:22px 6%;display:flex;align-items:center;justify-content:space-between;background:var(--ink);color:#fff}
+.logo{font-size:24px;font-weight:900;letter-spacing:3px}.logo span{color:var(--accent)}
+nav a{color:#ddd;text-decoration:none;margin-left:20px;font-size:14px}
+.hero{padding:80px 6% 62px;background:var(--ink);color:#fff;position:relative;overflow:hidden}
+.hero:after{content:"F";position:absolute;right:4%;top:-90px;font-size:420px;font-weight:900;color:#ffffff08;pointer-events:none}
+.kicker{font-size:12px;letter-spacing:4px;color:var(--gold);text-transform:uppercase;font-weight:bold}
+h1{font-size:clamp(42px,8vw,88px);line-height:.98;max-width:850px;margin:18px 0}
+.hero p{font-size:18px;line-height:1.7;color:#d0ccc5;max-width:700px}
+.cta{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;padding:14px 22px;margin-top:14px;font-weight:bold;border-radius:4px}
+section{padding:48px 6%}.heading{font-size:clamp(28px,4vw,42px);margin:0 0 10px}.intro{color:var(--muted);line-height:1.7;max-width:760px;margin:0 0 28px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(245px,1fr));gap:18px}
+.card{background:#fff;border:1px solid #e6dfd3;border-radius:12px;padding:24px;box-shadow:0 8px 24px #17171708;transition:transform .2s}
+.card:hover{transform:translateY(-4px)}
+.badge{display:inline-block;background:#f8e8e1;color:var(--accent);padding:7px 10px;border-radius:3px;font-size:11px;font-weight:bold;letter-spacing:1.5px}
+h2{font-size:24px;margin:14px 0 10px}.card p{color:#68635b;line-height:1.65}
+.card h3{font-size:14px;margin:20px 0 8px;color:var(--accent);text-transform:uppercase;letter-spacing:1px}
+.card ul{padding-left:20px;color:#514c45;line-height:1.7}
+.prepare{margin-top:16px;padding:15px;background:#f7f2e9;border-left:3px solid var(--gold);line-height:1.65;font-size:14px}
+.prepare strong{display:block;margin-bottom:6px}
+.about{background:#e9e1d3}.aboutbox{max-width:850px;margin:auto;text-align:center;padding:36px;background:#fff;border-radius:12px}
+.aboutbox h2{font-size:32px}.author{color:var(--accent);font-weight:bold}
+footer{background:var(--ink);color:#bcb7af;padding:26px 6%;font-size:12px;line-height:1.7}
+@media(max-width:600px){header{align-items:flex-start;gap:12px;flex-direction:column}nav a{margin:0 14px 0 0}.hero{padding-top:55px}}
+</style>
+</head>
+<body>
+<header><div class="logo">FIT<span>LINE</span></div><nav><a href="#products">Продукты</a><a href="#prep">Приготовление</a><a href="#authors">Авторы</a></nav></header>
+<div class="hero">
+<div class="kicker">Обзор продуктов • состав • приготовление</div>
+<h1>Познакомься с FitLine.</h1>
+<p>Изучай состав популярных продуктов, узнавай, как обычно готовят порошковые смеси, и сверяй информацию с этикеткой конкретной упаковки.</p>
+<a class="cta" href="#products">Смотреть продукты ↓</a>
+</div>
+
+<section id="products">
+<div class="kicker">Каталог</div><h2 class="heading">Популярные продукты</h2>
+<p class="intro">Состав и инструкция могут различаться в зависимости от страны, вкуса и версии продукта. Точная дозировка всегда указана на упаковке производителя.</p>
+<div class="cards">
+<article class="card"><span class="badge">VITAMINS & PLANT INGREDIENTS</span><h2>PowerCocktail</h2>
+<p>Порошковая смесь с витаминными, растительными и другими ингредиентами.</p>
+<h3>Что может входить</h3><ul><li>Витамины группы B, C и E</li><li>Растительные экстракты</li><li>Пищевые волокна</li><li>Молочнокислые культуры и минералы</li></ul>
+<div class="prepare" id="prep"><strong>Как готовят</strong>Порошок смешивают с водой. Количество порошка и воды, время приёма и частоту нужно брать только с этикетки своей упаковки.</div></article>
+
+<article class="card"><span class="badge">MINERAL MIX</span><h2>Restorate</h2>
+<p>Минеральная порошковая смесь; в составе некоторых версий есть витамин D3.</p>
+<h3>Что может входить</h3><ul><li>Кальций и магний</li><li>Калий и цинк</li><li>Другие микроэлементы</li><li>Витамин D3 (в некоторых вариантах)</li></ul>
+<div class="prepare"><strong>Как готовят</strong>Порошок растворяют в воде согласно инструкции на упаковке. Не меняйте указанную порцию самостоятельно.</div></article>
+
+<article class="card"><span class="badge">CONTAINS CAFFEINE</span><h2>Activize Oxyplus</h2>
+<p>Порошковый продукт с гуараной, кофеином и витаминными компонентами.</p>
+<h3>Что может входить</h3><ul><li>Экстракт гуараны (источник кофеина)</li><li>Витамины группы B и витамин C</li><li>Растительные экстракты</li></ul>
+<div class="prepare"><strong>Как готовят</strong>Способ смешивания и порцию сверяйте с этикеткой. Продукт содержит кофеин; подросткам не следует использовать его как энергетик или начинать приём без родителя и врача.</div></article>
+
+<article class="card"><span class="badge">FIBER & VITAMINS</span><h2>Basics</h2>
+<p>Смесь, в состав которой могут входить пищевые волокна, витаминные и растительные компоненты.</p>
+<h3>Что может входить</h3><ul><li>Пищевые волокна</li><li>Витамины</li><li>Овощные и растительные порошки</li><li>Другие компоненты, зависящие от версии</li></ul>
+<div class="prepare"><strong>Как готовят</strong>Размешивают с жидкостью в соответствии с инструкцией производителя. Объём воды и размер порции проверьте на своей упаковке.</div></article>
+</div>
+</section>
+
+<section class="about" id="authors"><div class="aboutbox">
+<div class="kicker">О проекте</div><h2>Информация о FitLine — в одном месте</h2>
+<p class="intro" style="margin:0 auto">Сайт создан для ознакомления с продуктами, составом и указаниями по приготовлению. Не заменяет официальную этикетку или консультацию специалиста.</p>
+<p>Автор сайта: <span class="author">Нурислам</span> · <span class="author">Шолпан Аширбаева</span></p>
+</div></section>
+<footer>Неофициальный информационный сайт, не связанный с FitLine или PM-International. Пищевые добавки не являются лекарствами и не заменяют полноценное питание. Информация о составе и приготовлении носит общий характер: всегда сверяйтесь с этикеткой продукта. Для несовершеннолетних любые добавки — только после обсуждения с родителем и медицинским специалистом.</footer>
+</body></html>
